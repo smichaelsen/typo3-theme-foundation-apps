@@ -1,0 +1,10 @@
+{
+	"name": "smichaelsen/theme-foundation-apps",
+	"description": "TYPO3 Theme for Foundation Apps",
+	"type": "typo3-cms-extension",
+	"autoload": {
+		"psr-4": {
+			"AppZap\\ThemeFoundationApps\\": "Classes/"
+		}
+	}
+}
