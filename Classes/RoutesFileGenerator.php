@@ -40,10 +40,11 @@ class RoutesFileGenerator {
 			/** @var \DirectoryIterator $file */
 			if ($file->getExtension() === 'html') {
 				$templateFileData = $this->parseTemplateFile($file->getPathname());
-				$routesData[$templateFileData['name']] = [
-					'path' => $this->getTemplateRetreivalUrl($file->getFilename(), $appExtensionKey),
-					'url' => $templateFileData['url'],
-				];
+				$routesData[$templateFileData['name']] = $templateFileData;
+				$routesData[$templateFileData['name']]['path'] = $this->getTemplateRetreivalUrl(
+					$file->getFilename(),
+					$appExtensionKey
+				);
 			}
 		}
 		return $routesData;
