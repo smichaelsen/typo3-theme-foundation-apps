@@ -1,0 +1,3 @@
+plugin.tx_themefoundationapps {
+	appExtensionKey = theme_foundation_apps
+}

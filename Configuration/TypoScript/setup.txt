@@ -1,0 +1,15 @@
+config.htmlTag_setParams = ng-app="application"
+
+page {
+	includeCSS.app = EXT:{$plugin.tx_themefoundationapps.appExtensionKey}/Resources/Public/css/app.css
+	includeJSlibs.foundation = EXT:{$plugin.tx_themefoundationapps.appExtensionKey}/Resources/Public/js/foundation.js
+	includeJS {
+		templates = EXT:{$plugin.tx_themefoundationapps.appExtensionKey}/Resources/Public/js/templates.js
+		routes = EXT:{$plugin.tx_themefoundationapps.appExtensionKey}/Resources/Public/js/routes.js
+		app = EXT:{$plugin.tx_themefoundationapps.appExtensionKey}/Resources/Public/js/app.js
+	}
+}
+
+plugin.tx_themefoundationapps.settings {
+	appExtensionKey = {$plugin.tx_themefoundationapps.appExtensionKey}
+}
